@@ -1,0 +1,87 @@
+/* Headers Pegajosos */
+div[data-testid="stVerticalBlock"] div:has(div.fixed-header) {
+    position: sticky;
+    top: 2.875rem;
+    z-index: 999;
+}
+.fixed-header {
+    border-bottom: 0.5px solid black;
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+}
+
+/* Estilos para los encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: #205b92;
+    font-weight: bold;
+}
+
+/* Botones */
+.stButton>button {
+    background-color: #2769a7;  /* Color principal */
+    color: white;               /* Texto en blanco */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.stButton>button:hover {
+    background-color: #9ccaf5;  /* Color más oscuro para el hover */
+    color: white;               /* Mantener el texto en blanco */
+}
+
+/* Cambiar color de fondo de st.radio */
+div.row-widget.stRadio > div[role="radiogroup"] > label[data-baseweb="radio"] > div:first-child {
+    background-color: #2769a7;
+}
+
+/* Inputs */
+input[type="text"], input[type="number"], textarea {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Selecciones */
+select {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Fondos de la aplicación */
+.stApp {
+    background-color: #FFFFFF;
+}
+
+/* Radio Button */
+div.row-widget.stRadio > div {
+    flex-direction: row;
+    align-items: stretch;
+}
+
+/* Headers Pegajosos */
+.fixed-header {
+    position: sticky;
+    top: 0;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #DDDDDD;
+}
