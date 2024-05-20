@@ -5,12 +5,3 @@ backgroundColor="#FFFFFF"
 secondaryBackgroundColor="#ebf0f2"
 textColor="#333333"
 font="sans serif"
-
-[header]
-backgroundColor="#00A6D6"
-textColor="#FFFFFF"
-
-[sidebar]
-backgroundColor="#FFFFFF"
-textColor="#333333"
-separatorColor="#DDDDDD"

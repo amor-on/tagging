@@ -89,50 +89,52 @@ if uploaded_csv:
     with col2:
         etiquetas = {}
         for label in labels_info:
-            label_name = label["name"]
-            label_type = label["type"]
-            label_description = label["description"]
-            label_values = label["values"]
-            quantifiable = label.get("quantifiable", False)
+            with st.container():  # Utilizar contenedor para cada etiqueta
+                st.markdown('---')  # Línea divisoria entre categorías
+                label_name = label["name"]
+                label_type = label["type"]
+                label_description = label["description"]
+                label_values = label["values"]
+                quantifiable = label.get("quantifiable", False)
 
-            # Obtener los valores seleccionados anteriormente si existen
-            default_value = st.session_state['selected_options'].get(label_name, [])
+                # Obtener los valores seleccionados anteriormente si existen
+                default_value = st.session_state['selected_options'].get(label_name, [])
 
-            if label_type == "multiselect":
-                # Permitir seleccionar todas las opciones primero
-                selected_options = st.multiselect(f"**{label_name}**", options=label_values, default=default_value, help=label_description, key=f"multiselect_{label_name}_{row_to_label}")
-                etiquetas[label_name] = {}
+                if label_type == "multiselect":
+                    # Permitir seleccionar todas las opciones primero
+                    selected_options = st.multiselect(f"**{label_name}**", options=label_values, default=default_value, help=label_description, key=f"multiselect_{label_name}_{row_to_label}")
+                    etiquetas[label_name] = {}
 
-                # Mostrar los sliders después de seleccionar todas las opciones
-                for option in selected_options:
-                    if quantifiable:
-                        relevance = st.slider(f"Relevancia para '{option}' en {label_name}", 0.0, 1.0, 1.0, step=0.01, format="%.2f", key=f"relevance_{label_name}_{option}_{row_to_label}")
-                        etiquetas[label_name][option] = relevance
+                    # Mostrar los sliders después de seleccionar todas las opciones
+                    for option in selected_options:
+                        if quantifiable:
+                            relevance = st.slider(f"Relevancia para **{option}**", 0.0, 1.0, 1.0, step=0.01, format="%.2f", key=f"relevance_{label_name}_{option}_{row_to_label}")
+                            etiquetas[label_name][option] = relevance
+                        else:
+                            etiquetas[label_name][option] = "NA"
+
+                elif label_type == "select":
+                    if len(label_values) <= 6:
+                        selected_option = st.radio(f"**{label_name}**", options=label_values, index=label_values.index(default_value[0]) if default_value else 0, help=label_description, key=f"radio_{label_name}_{row_to_label}")
+                        st.session_state['selected_options'][label_name] = [selected_option]
+                        if quantifiable:
+                            relevance = st.slider(f"Relevancia para **{selected_option}**", 0.0, 1.0, 1.0, step=0.01, format="%.2f", key=f"relevance_{label_name}_{row_to_label}")
+                            etiquetas[label_name] = {selected_option: relevance}
+                        else:
+                            etiquetas[label_name] = selected_option
                     else:
-                        etiquetas[label_name][option] = "NA"
+                        selected_option = st.selectbox(f"**{label_name}**", options=label_values, index=label_values.index(default_value[0]) if default_value else 0, help=label_description, key=f"select_{label_name}_{row_to_label}")
+                        st.session_state['selected_options'][label_name] = [selected_option]
+                        if quantifiable:
+                            relevance = st.slider(f"Relevancia para **{selected_option}**", 0.0, 1.0, 1.0, step=0.01, format="%.2f", key=f"relevance_{label_name}_{row_to_label}")
+                            etiquetas[label_name] = {selected_option: relevance}
+                        else:
+                            etiquetas[label_name] = selected_option
+                elif label_type in ["float", "bool"]:
+                    value = st.slider(f"**{label_name}**", min_value=0.0, max_value=1.0, value=default_value[0] if default_value else 1.0, step=0.01, help=label_description, key=f"slider_{label_name}_{row_to_label}") if label_type == "float" \
+                            else st.radio(f"**{label_name}**", options=["No aplica", "True", "False"], index=["No aplica", "True", "False"].index(default_value[0]) if default_value else 0, horizontal=True, help=label_description, key=f"radio_{label_name}_{row_to_label}")
+                    etiquetas[label_name] = value
 
-            elif label_type == "select":
-                if len(label_values) <= 6:
-                    selected_option = st.radio(f"**{label_name}**", options=label_values, index=label_values.index(default_value[0]) if default_value else 0, help=label_description, key=f"radio_{label_name}_{row_to_label}")
-                    st.session_state['selected_options'][label_name] = [selected_option]
-                    if quantifiable:
-                        relevance = st.slider(f"Relevancia para '{selected_option}'", 0.0, 1.0, 1.0, step=0.01, format="%.2f", key=f"relevance_{label_name}_{row_to_label}")
-                        etiquetas[label_name] = {selected_option: relevance}
-                    else:
-                        etiquetas[label_name] = selected_option
-                else:
-                    selected_option = st.selectbox(f"**{label_name}**", options=label_values, index=label_values.index(default_value[0]) if default_value else 0, help=label_description, key=f"select_{label_name}_{row_to_label}")
-                    st.session_state['selected_options'][label_name] = [selected_option]
-                    if quantifiable:
-                        relevance = st.slider(f"Relevancia para '{selected_option}' en {label_name}", 0.0, 1.0, 1.0, step=0.01, format="%.2f", key=f"relevance_{label_name}_{row_to_label}")
-                        etiquetas[label_name] = {selected_option: relevance}
-                    else:
-                        etiquetas[label_name] = selected_option
-            elif label_type in ["float", "bool"]:
-                value = st.slider(f"**{label_name}**", min_value=0.0, max_value=1.0, value=default_value[0] if default_value else 1.0, step=0.01, help=label_description, key=f"slider_{label_name}_{row_to_label}") if label_type == "float" \
-                        else st.radio(f"**{label_name}**", options=["No aplica", "True", "False"], index=["No aplica", "True", "False"].index(default_value[0]) if default_value else 0, horizontal=True, help=label_description, key=f"radio_{label_name}_{row_to_label}")
-                etiquetas[label_name] = value
-    
         if st.button("Guardar y ver siguiente"):
             for label_name, values in etiquetas.items():
                 
