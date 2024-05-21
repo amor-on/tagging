@@ -32,12 +32,17 @@ def show_tagging_tab():
             # Título de la aplicación y logo en el encabezado
             st.title("Etiquetado de contenido")
             
+            # Asegurarse de que row_to_label esté dentro del rango válido de filas
+            if row_to_label >= len(content_df):
+                row_to_label = len(content_df) - 1
+
             # Selección de fila para etiquetar
             new_row_to_label = st.number_input("Seleccione el índice de la fila para etiquetar:", min_value=0, max_value=len(content_df)-1, value=row_to_label, key='row_selector')
-            
+
             if new_row_to_label != row_to_label:
                 st.session_state['current_row'] = new_row_to_label
                 st.rerun()
+
             
             row_data = content_df.iloc[new_row_to_label]
 
