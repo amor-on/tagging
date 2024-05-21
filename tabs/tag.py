@@ -177,6 +177,25 @@ def show_tagging_tab():
                         st.session_state['current_row'] = row_to_label + 1
                         st.rerun()
 
+                # Botón "Guardar y continuar"
+                if st.button("Guardar y continuar", help="Guarda las etiquetas actuales y pasa a la siguiente fila para seguir etiquetando."):
+                    for label_name, values in etiquetas.items():
+                        if isinstance(values, dict):
+                            formatted_values = ", ".join(f"{k}:{v:.2f}" if isinstance(v, float) else f"{k}:NA" for k, v in values.items())
+                            content_df.at[row_to_label, label_name] = formatted_values
+                        else:
+                            content_df.at[row_to_label, label_name] = values
+                        # Guardar las selecciones actuales en session_state para la próxima fila
+                        st.session_state['selected_options'][label_name] = list(values.keys()) if isinstance(values, dict) else [values]
+
+                    st.session_state['content_df'] = content_df.copy()
+                    st.success("Etiqueta guardada con éxito!")
+
+                    # Ir a la siguiente fila automáticamente
+                    if row_to_label + 1 < len(content_df):
+                        st.session_state['current_row'] = row_to_label + 1
+                        st.rerun()
+
                 # Botón "Guardar progreso"
                 if st.button("Guardar progreso", type="primary", help="Guarda el progreso actual como una nueva versión del CSV etiquetado."):
                     final_columns = ["stage", "course", "content", "age", "subject", "unit_type", "unit_title", "card_title", "block_title", "card_type", "block_type", "text"] + [label["name"] for label in labels_info]
@@ -189,6 +208,15 @@ def show_tagging_tab():
                     os.makedirs(os.path.dirname(versioned_file_path), exist_ok=True)
                     content_df.to_csv(versioned_file_path, index=False)
                     st.success("CSV guardado con éxito!")
+                    
+                    # Mostrar botón para descargar el CSV guardado
+                    st.download_button(
+                        label="Descargar CSV guardado",
+                        data=content_df.to_csv(index=False).encode('utf-8'),
+                        file_name=file_name,
+                        mime='text/csv'
+                    )
+
                                 
         else:
             st.warning("Por favor, cargue un archivo CSV desde la pestaña de 'Exploración de Contenidos'.")
