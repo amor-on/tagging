@@ -1,0 +1,113 @@
+stage,course,content,age,subject,unit_type,unit_title,card_title,block_title,card_type,block_type,text,stage,course,content,age,subject,unit_type,unit_title,card_title,block_title,card_type,block_type,text
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Pueden ayudar los robots en situaciones de emergencia?,Inicio,lesson,text,"6 ¿Pueden ayudar los robots en situaciones de emergencia?
+https://plus.edebe.com/resources/video/vm_138373_tecno_4eso_s06_046.mp4
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/46_1.png
+Los servicios de emergencias (bomberos, cuerpos de seguridad, sanitarios, etc.) se enfrentan muchas veces a situaciones difíciles para poder salvar a personas y proteger instalaciones, edificios, etc. Por ejemplo, en caso de accidentes químicos, tienen que entrar en espacios contaminados poniendo en riesgo sus vidas.
+¿Se podría diseñar un robot capaz de entrar en estos espacios peligrosos y detectar contaminantes? ¿Y si además el robot pudiera coger objetos peligrosos o explosivos para llevarlos a sitios más seguros?
+- ¿Te atreves a diseñar, construir y programar un robot de emergencias teledirigido?",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Construimos el chasis del robot?,Contenido,lesson,text,"¿Construimos el chasis del robot?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/47_1.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Construimos el chasis del robot?,Actividades,lesson,exam,"Empezad con el diseño de la estructura del robot de emergencias. Primero dibujad algunos bocetos del robot que vais a construir teniendo en cuenta los siguientes requisitos:
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/47_2.png
+- El robot podrá moverse en cualquier dirección.
+- Escoged un sistema de tracción: tipo oruga, con tres, cuatro o seis ruedas.
+- El chasis del robot deberá alojar el sistema de tracción, los motores, la alimentación eléctrica, la placa controladora y los sensores.
+- El robot contará con un sistema de sujeción de objetos para poder cogerlos y retirarlos: una pinza, un brazo robótico, una plataforma elevadora, etc.
+— Tras quedaros con el boceto definitivo, elaborad una lista de todos los materiales y componentes que necesitaréis para la construcción de la estructura, el sistema de tracción y el sistema de sujeción de objetos.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/47_3.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Construimos el chasis del robot?,Actividades,lesson,exam,"Una vez escogido el boceto que más os gusta y los componentes que usaréis, es el momento de hacer el diseño definitivo de vuestro robot.
+— Emplead un programa de diseño 3D como SketchUp. Tomad medidas precisas de todas las partes del chasis y de los componentes y distribuid las piezas adecuadamente en la estructura. Para no equivocaros, es muy útil preparar una tabla con todas las medidas.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/47_4.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Construimos el chasis del robot?,Actividades,lesson,exam,"Ahora que ya tenéis el diseño definitivo, podéis empezar a fabricar las distintas partes de la estructura del robot y a ensamblarlas.
+— Es conveniente que antes de empezar a fabricar hagáis un listado de los pasos que debéis seguir para montarlo y que os repartáis las responsabilidades dentro del grupo.
+Ficha 53",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Cómo se moverá el robot?,Contenido,lesson,text,"¿Cómo se moverá el robot?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/48_1.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Cómo se moverá el robot?,Actividades,lesson,exam,"Una vez que habéis montado los motores y las ruedas en el chasis del robot, precisáis proporcionarles energía eléctrica y enviarles las órdenes para avanzar. Para ello necesitaréis:
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/48_2.png
+- Una placa Arduino, que será el «cerebro» del robot. Como vais a montar muchos actuadores y sensores, una buena opción es la Arduino Mega.
+- Una placa controladora de motores en función del número de ruedas que queráis controlar, dos (L298N) o cuatro. Estas placas permiten cambiar la dirección y velocidad fácilmente.
+- Un sistema de alimentación eléctrica, que debe proporcionar la tensión eléctrica que requieren los motores.
+— Buscad información en Internet para elegir los componentes más adecuados y para aprender cómo se conectan. A continuación, haced las conexiones.",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Cómo se moverá el robot?,Actividades,lesson,exam,"Ya tenéis el montaje eléctrico de los motores. Ahora vais a programar la placa Arduino empleando el IDE de Arduino. Si aún no lo tenéis instalado, podéis descargar la última versión de la web oficial de Arduino.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/48_3.png
+a) El robot avanza: todas las ruedas giran en el mismo sentido.
+b) El robot retrocede: todas las ruedas giran en el mismo sentido, pero al contrario que en el programa anterior.
+c) El robot gira hacia la derecha: el motor derecho retrocede y el motor izquierdo avanza.
+d) El robot gira hacia la izquierda: el motor derecho avanza y el motor izquierdo retrocede.
+e) Control de velocidad: dota al robot con dos velocidades diferentes, de forma que podáis escoger entre un modo de movimiento rápido y otro de precisión.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/48_4.png
+Ficha 49     Ficha 54     Ficha 55     Ficha 80",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Podemos evitar obstáculos?,Contenido,lesson,text,"¿Podemos evitar obstáculos?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/49_1.png
+Ficha 48     Ficha 50",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Podemos evitar obstáculos?,Actividades,lesson,exam,"Uno de los sensores más empleados en robótica para detectar objetos es el sensor ultrasónico HC-SR04. Buscad información en Internet sobre su montaje y programación en Arduino.
+a) Conectad los pines del sensor a los pines de la placa Arduino.
+b) Cread un programa que calcule la distancia a un objeto y la muestre por el puerto serie. Comprobad el funcionamiento del sketch aproximando objetos al sensor.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/49_2.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Podemos evitar obstáculos?,Actividades,lesson,exam,"Ahora hay que integrar el sensor de ultrasonidos en el robot. Situadlo en la parte delantera del robot de forma que pueda detectar objetos cuando avance.
+— Cread un programa para que el robot se mueva en una dirección pero, si detecta un objeto, pare los motores, gire un poco y continúe avanzando en otra dirección.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/49_3.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Podemos evitar obstáculos?,Actividades,lesson,exam,"El robot evita obstáculos que habéis programado no es muy eficiente, ya que solo detecta objetos en la parte frontal. ¿Y si hacéis que el sensor ultrasónico pueda girar para anticiparse y detectar los obstáculos de los laterales?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/49_4.png
+Una solución es montar el sensor de ultrasonidos en una pequeña estructura que pueda girar gracias a la acción de un servomotor.
+a) Situad el servomotor en su sitio y realizad las conexiones eléctricas con la placa Arduino.
+b) Cread un programa que modifique el ángulo de giro del servomotor.
+c) Programad el robot para que avance en una dirección y se detenga al detectar un objeto. A continuación, efectuará giros del servomotor para saber en qué dirección no hay obstáculos y avanzará en esa dirección.",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Qué peligros es capaz de detectar el robot?,Contenido,lesson,text,"¿Qué peligros es capaz de detectar el robot?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/50_1.png
+Ficha 47     Ficha 52     Ficha 82",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Qué peligros es capaz de detectar el robot?,Actividades,lesson,exam,"Las temperaturas extremas son peligrosas para la vida. Vais a medir la temperatura con un sensor, como el TMP36.
+— Montad el circuito y cread un programa que mida la temperatura y la muestre por el puerto serie.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/50_2.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Qué peligros es capaz de detectar el robot?,Actividades,lesson,exam,"La presencia de fuego en una instalación es una fuente de peligros. Podéis detectar fuego con un sensor de llamas infrarrojo para Arduino.
+— Montad el prototipo y comprobad que funciona.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/50_3.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Qué peligros es capaz de detectar el robot?,Actividades,lesson,exam,"Antes de que los equipos de emergencias entren en un espacio cerrado, el robot debe verificar que no hay gases contaminantes. La familia de sensores de gases MQ detecta diferentes tipos de gases. Por ejemplo, el MQ-2 es sensible a la presencia de metano, butano, propano, alcohol, GLP y humo.
+— Montad el prototipo del circuito y generad un programa que detecte la presencia de estos gases contaminantes. Si existen gases peligrosos, mostrad un mensaje de aviso por el puerto serie.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/50_4.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Qué peligros es capaz de detectar el robot?,Actividades,lesson,exam,"¿Cómo avisará el robot de todos estos peligros?
+— Una vez integrados los tres sensores en la protoboard, tendréis que crear un único programa que controle los tres sensores y active ledes o un timbre cuando exista alguno de estos peligros.",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Cómo podemos coger objetos?,Contenido,lesson,text,"¿Cómo podemos coger objetos?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/51_1.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Cómo podemos coger objetos?,Actividades,lesson,exam,"Elegid el tipo de pinza o sistema para recoger objetos considerando los siguientes aspectos:
+- Los grados de libertad del robot: con tres o cuatro será suficiente.
+- El tipo de servomotores: podéis optar por servos con un par motor bajo, como el SG90 o el MG90, o servos más potentes, como el MG996R.
+- Los servomotores tienen un ángulo de giro de 180° o de 360°.
+— Realizad el montaje mecánico de la pinza robótica y colocad los servomotores en su posición empleando los tornillos necesarios.",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Cómo podemos coger objetos?,Actividades,lesson,exam,"Antes de montar el brazo articulado en el robot, vais a probarlo por separado utilizando potenciómetros para controlar el ángulo de giro de los servos.
+- Necesitaréis tantos potenciómetros como servomotores.
+- Los potenciómetros se conectan a positivo y negativo y a una entrada analógica de la placa Arduino.
+- Los servomotores deberán ir conectados directamente a la alimentación eléctrica externa y el conector de la señal se conectará a un pin PWM de la placa Arduino.
+— Una vez que tengáis el montaje y el cableado del prototipo, haced un programa para controlar el giro de los servomotores a medida que giran los potenciómetros. Necesitaréis utilizar la función map().
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/51_2.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Cómo podemos coger objetos?,Actividades,lesson,exam,"Tras las pruebas, ya podéis instalar el brazo robótico en la posición definitiva del robot de emergencias.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/51_3.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Podemos controlar el robot desde nuestro móvil?,Contenido,lesson,text,"¿Podemos controlar el robot desde nuestro móvil?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/52_1.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Podemos controlar el robot desde nuestro móvil?,Actividades,lesson,exam,"La conexión inalámbrica con una placa Arduino se puede realizar con diferentes tecnologías. En este caso, vais a emplear bluetooth, que os permitirá controlar el robot desde el móvil con una aplicación. Para ello usaréis el módulo Bluetooth HC-06 para Arduino o uno similar.
+— Conectad los dos pines que proporcionan alimentación eléctrica al módulo (VCC y GND) y los dos pines que permiten la comunicación en serie (TX y RX). Fijaos en que el pin TX (transmisor) de la placa Arduino se conecta con el pin RX (receptor) del módulo bluetooth y el RX de la placa con el TX del módulo.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/52_2.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Podemos controlar el robot desde nuestro móvil?,Actividades,lesson,exam,"Escoged una aplicación que permita conectar la placa Arduino con el móvil por bluetooth: Arduino Bluetooth Controller, Blynk, Bluetooth Serial Controller, Bluetooth Joystick, etc.
+- Instalad una de estas aplicaciones en vuestro móvil y abridla.
+- Vinculad el móvil al módulo BluetoothHC-06. La contraseña es 1234.
+- Configurad cada botón del joystick con un comando (una letra) que se enviará a la placa Arduino a través del puerto serie.
+- Unificad todos los programas efectuados en las actividades anteriores.
+- Cread un programa de Arduino que lea la información que le llega por el puerto serie. En función del comando que le llega por bluetooth del móvil, se realizará una acción.
+- Descargad el programa en la placa y haced pruebas con el móvil.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/52_3.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Ponemos a prueba el robot de emergencias?,Contenido,lesson,text,https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/53_1.png,,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Ponemos a prueba el robot de emergencias?,Actividades,lesson,exam,"Es el momento de poner a prueba el robot. Cread un circuito con diferentes pruebas que simulen situaciones de emergencia. Los robots, controlados con la aplicación o de forma autónoma, deben superar las diferentes pruebas.
+— Podéis trazar un recorrido con obstáculos que haya que esquivar, rampas, objetos que haya que transportar, poner una vela para detectar la llama o utilizar un mechero para detectar gas. ¡Incluso podéis organizar un torneo!
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/53_2.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Ponemos a prueba el robot de emergencias?,Actividades,lesson,exam,"Vais a grabar un vídeo para explicar este proyecto.
+a) Podéis dibujar el esquema de conexiones con Fritzing para explicar el montaje de los diferentes componentes.
+b) Un diagrama de flujo os ayudará a explicar la programación con Arduino.
+c) No os olvidéis explicar el funcionamiento de la aplicación de control a modo de videotutorial.",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,¿Ponemos a prueba el robot de emergencias?,Actividades,lesson,exam,"¿Cómo pueden ayudar los robots de emergencia a los servicios actuales? ¿Qué añadiríais a un robot para hacerlo más efectivo?
+— Podéis organizar una lluvia de ideas para pensar en situaciones reales donde podríamos utilizar estos robots. También podéis debatir sobre los límites y las precauciones que se deberían tener con este tipo de tecnologías.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad6/img/53_3.png",,,,,,,,,,,,
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,¿Pueden ayudar los robots en situaciones de emergencia?,REVISA-T,,learning_diary,,"—¿Qué te ha parecido más difícil del proyecto? ¿Cómo lo habéis solucionado?
+—¿Os ha quedado pendiente alguna parte?
+—¿Cómo has empleado la fase de descomposición del problema en partes del pensamiento computacional para resolver este proyecto? ¿Cómo puedes aplicarlo en otros aspectos de tu vida?
+—¿Cómo ha ido el trabajo en equipo?",,,,,,,,,,,,
