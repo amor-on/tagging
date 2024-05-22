@@ -8,5 +8,3 @@ __pycache__/
 
 # Archivos de despliegue
 *.log
-
-data/
