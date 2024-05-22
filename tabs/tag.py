@@ -9,9 +9,10 @@ import os
 def load_labels():
     return load_labels_info('data/labels/labels_info.json')
 
-labels_info = load_labels()
 
 def show_tagging_tab():
+    labels_info = load_labels()
+
     if 'ready_to_tag' in st.session_state and st.session_state['ready_to_tag']:
         if 'content_df' in st.session_state:
             content_df = st.session_state['content_df']
