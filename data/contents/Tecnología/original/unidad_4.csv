@@ -1,0 +1,93 @@
+stage,course,content,age,subject,unit_type,unit_title,card_title,block_title,card_type,block_type,text
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1","¿1 + 1 = 0? Sí, y me llevo 1",Inicio,lesson,text,"4 ¿1 + 1 = 0? Sí, y me llevo 1
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/30_1.png
+Hace muchos años que el ser humano trabaja con números. Sirven para contar, numerar y un sinfín de tareas. Pero las máquinas y los humanos no los usan de igual manera, sobre todo las modernas máquinas de computación, que utilizan el sistema binario en el que 1 + 1 = 0. ¿Cómo puede ser esto?
+Partiendo de los números binarios y a través del estudio de las puertas lógicas como herramienta para tomar decisiones, vamos a descifrar el enigma de las máquinas digitales.
+- ¿Te atreves a construir una calculadora mecánica?"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Cómo se cuenta en binario?,Contenido,lesson,text,"¿Cómo se cuenta en binario?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/31_1.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Cómo se cuenta en binario?,Actividades,lesson,exam,"En binario con los valores que puede tomar un único bit se puede contar de 0 a 1, pero también se puede expresar la diferencia entre sí y no, verdadero y falso, apagado y encendido, etc.
+a) ¿Qué tipo de preguntas se pueden responder con un único bit de información? Poned al menos cuatro ejemplos.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/31_2.png
+b) ¿Qué cantidad se puede contar con dos bits? ¿Y con tres bits?
+c) Escribid de modo ordenado todas las combinaciones posibles con dos y tres bits.
+d) ¿Qué número decimal corresponde al número binario 11? ¿Y al 101?
+e) ¿Qué número binario corresponde al número decimal 9? ¿Y al 12?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/31_3.png
+f) Al conjunto de 8 bits se le denomina byte. ¿Cuál es el número decimal más alto que se puede expresar con 8 bits?
+Ficha 32"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Se conseguirá enviar la ayuda humanitaria?,Contenido,lesson,text,"¿Se conseguirá enviar la ayuda humanitaria?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/32_1.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Se conseguirá enviar la ayuda humanitaria?,Actividades,lesson,exam,"Imaginad que dos países (A y B) pretenden enviar ayuda humanitaria a un tercer país (S) y que este la recibirá si cualquiera de ellos quiere enviarla. Esta situación es la equivalente en lógica a una puerta OR. Estudiad las diferentes opciones que se podrían producir.
+a) ¿Cuántas combinaciones distintas hay, es decir, las posibles opciones que puede adoptar cada país?
+b) ¿En cuántas de estas situaciones se recibirá la ayuda?
+c) Representad la situación con puertas lógicas.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/32_2.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Se conseguirá enviar la ayuda humanitaria?,Actividades,lesson,exam,"Imaginad ahora que la ayuda solo llegará si los dos países están de acuerdo en enviarla.
+a) ¿Cuántas combinaciones diferentes hay?
+b) ¿En cuántas de estas situaciones se recibirá la ayuda?
+c) Representad la situación con puertas lógicas.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/32_3.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Se conseguirá enviar la ayuda humanitaria?,Actividades,lesson,exam,"Imaginad ahora que para que la ayuda llegue hay que pasar por el territorio de otro país (C). La ayuda llegará solo si el país C lo permite y si hay mayoría en una votación entre los tres países (A, B y C).
+a) ¿Cuántas combinaciones distintas hay?
+b) ¿En cuántas de estas situaciones se recibirá la ayuda?
+c) Simplificad la función lógica.
+d) Representad la situación con puertas lógicas.
+Ficha 33     Ficha 34     Ficha 35     Ficha 36"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Cómo es un circuito electrónico que suma números binarios?,Contenido,lesson,text,"¿Cómo es un circuito electrónico que suma números binarios?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/33_1.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Cómo es un circuito electrónico que suma números binarios?,Actividades,lesson,exam,"¿Cómo se suma en binario?
+a) Cuando sumáis en decimal, ¿en qué situación necesitáis emplear las llevadas?
+b) En el sistema binario se habla de acarreo, no de llevadas. ¿Qué valor tienen los bits de una suma que implique un acarreo?
+c) Es posible que el resultado de la suma requiera añadir un bit más a la izquierda. ¿Cuándo es necesario añadir un bit al resultado?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/33_2.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Cómo es un circuito electrónico que suma números binarios?,Actividades,lesson,exam,"¿Cómo es el circuito sumador de un bit?
+a) Escribid la tabla de verdad que representa la suma de dos números binarios de un bit A y B incluyendo una columna para el resultado de la suma y otra para el acarreo (Ac).
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/33_3.png
+b) Obtened la función algebraica de cada una de las dos funciones: S y Ac.
+c) Dibujad el circuito lógico con puertas AND, OR y NOT.
+d) Dibujad el circuito usando las puertas AND y XOR.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/33_4.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Y si probamos nuestro circuito?,Contenido,lesson,text,"¿Y si probamos nuestro circuito?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/34_1.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Y si probamos nuestro circuito?,Actividades,lesson,exam,"Vais a simular el circuito semisumador en TinkerCAD. Para ello necesitaréis información sobre los integrados que disponen de puertas AND y XOR.
+a) Buscad un esquema que represente el patillaje del integrado 74HC08 (cuádruple puerta AND).
+b) Buscad también el patillaje del integrado 74HC86 (cuádruple puerta XOR).
+c) Usad TinkerCAD para simular el circuito. Podéis apoyaros en el circuito de la imagen.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/34_2.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Es posible sumar números binarios con canicas?,Contenido,lesson,text,"¿Es posible sumar números binarios con canicas?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/34_3.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Es posible sumar números binarios con canicas?,Actividades,lesson,exam,"Buscad en Internet un simulador de calculadora mecánica.
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/34_4.png
+Ficha 37"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Es posible sumar números binarios con canicas?,Actividades,lesson,exam,"Observad las siguientes imágenes. Las dos primeras representan la entrada del número 12 en la calculadora mecánica. Como ya hemos visto, el número 12 en binario es 1100, por lo que introducimos dos canicas en las posiciones tercera y cuarta contando desde la derecha.
+a) ¿En qué posiciones quedarán las canicas si introducimos una canica en la posición 8, tal y como puede verse en la tercera imagen?
+b) ¿Qué operación se ha realizado y cuál es su resultado?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/35_1.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Es posible sumar números binarios con canicas?,Actividades,lesson,exam,"¿Cómo está actuando el elemento de la siguiente imagen para que la calculadora funcione? ¿A qué circuito lógico corresponde el efecto que realiza sobre las canicas?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/35_2.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Es posible sumar números binarios con canicas?,Actividades,lesson,exam,"Podéis completar la información sobre el funcionamiento de la calculadora mecánica de números binarios practicando con el simulador y visitando el canal de YouTube de Matthias Wandel, diseñador de la marble adding machine.
+a) ¿Hasta qué número se puede sumar con esta máquina?
+b) ¿Qué ocurre si se hace una suma cuyo resultado es mayor que dicho número máximo?"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Diseñamos y construimos nuestra propia calculadora?,Contenido,lesson,text,"¿Diseñamos y construimos nuestra propia calculadora?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/36_1.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Diseñamos y construimos nuestra propia calculadora?,Actividades,lesson,exam,"El creador de la máquina, Matthias Wandel, no solo ha compartido los vídeos de su funcionamiento, sino que también ha dejado los planos acotados y el despiece de cada uno de los elementos de la máquina. En la siguiente imagen podéis ver el plano general.
+a) ¿Qué partes de la máquina os parecen más complicadas de realizar?
+b) ¿Se os ocurre un diseño diferente para algunas partes de la máquina?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/36_2.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Diseñamos y construimos nuestra propia calculadora?,Actividades,lesson,exam,"Este diseño no es el único. En Internet podéis encontrar otros más sencillos, como el realizado por Hub Meertens.
+a) ¿Qué ventajas e inconvenientes creéis que tiene el modelo de Hub Meertens respecto al de Matthias Wandel?
+b) Tomando como ejemplo el plano de la imagen, realizad el plano acotado del modelo de Hub Meertens."
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",¿Diseñamos y construimos nuestra propia calculadora?,Actividades,lesson,exam,"Elegid uno de los dos diseños y construid vuestra propia calculadora de números binarios siguiendo los planos correspondientes.
+— Organizaos y repartid las tareas para ser más eficientes."
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",Puertas lógicas y decisiones,Contenido,lesson,text,https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/37_1.png
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",Puertas lógicas y decisiones,Actividades,lesson,exam,"¿Podéis usar lo aprendido para tomar mejores decisiones en la vida real? Las posibles combinaciones para tomar decisiones que habéis visto se producen en muchas situaciones de la vida real en las que hay que conseguir ponerse de acuerdo para alcanzar los objetivos con o sin igualdad en la capacidad de decisión.
+— ¿Podríais encontrar otras situaciones en las que se produzcan combinaciones que requieran acuerdos u otras en las que haya desigualdad a la hora de poder tomar decisiones?"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",Puertas lógicas y decisiones,Actividades,lesson,exam,"Las combinaciones a la hora de tomar decisiones son clave para el resultado de las votaciones. Organismos internacionales muy importantes tienen sus propios sistemas que afectan de manera significativa al resultado de las votaciones.
+— Investiga cómo se toman las decisiones en la ONU. ¿Sabrías explicar cómo afecta el sistema de votación a las decisiones que se toman en este organismo?
+https://plus.edebe.com/pymedia/markdownfiles/134335/unidad4/img/37_2.png"
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",Puertas lógicas y decisiones,Actividades,lesson,exam,"En el sistema binario 1 + 1 = 0. En el sistema decimal 1 + 1 = 2 pero ¿en el mundo real puede suceder que 1 + 1 sea más de dos?
+— ¿Se te ocurre alguna situación en la que suceda esto? Busca las definiciones de los términos sinergia y simbiosis."
+SECUNDARIA,CUARTO,TECNOLOGÍA 4,15-16 años,TECNOLOGIA,SA,"¿1 + 1 = 0? Sí, y me llevo 1",REVISA-T,,learning_diary,,"—¿Qué parte te ha costado más? ¿Cuál te ha resultado más divertida? ¿Por qué?
+—¿Has cometido algún error? ¿Cómo lo has podido solucionar?
+—¿Hay alguna parte del proceso que te hubiera gustado hacer de diferente manera?"
