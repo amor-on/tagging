@@ -440,5 +440,40 @@
         "type": "multiselect",
         "values": ["perception", "attention", "memory", "thinking","language"],
         "quantifiable": true
+    },
+    {
+        "name": "addressee",
+        "description": "The main user(s) for whom this educational object has been designed. In order to facilitate the identification of the target of the object during the labeling process, the vocabulary has been organized according to 4 factors:\n\n- Type of learner: it collects the values corresponding to the different types of learners to whom an ODE can be addressed",
+        "type": "multiselect",
+        "values": ["student", "student with special educational needs", "student with high intellectual abilities", "student with late integration into the educational system", "student with other specific educational support needs", "general public"],
+        "quantifiable": false
+    },
+    {
+        "name": "grouping",
+        "description": "Groups the values that provide information on how the recipients should be organized during the use of the object.",
+        "type": "multiselect",
+        "values": ["individual", "group"],
+        "quantifiable": false
+    },
+    {
+        "name": "educator",
+        "description": "Includes the values corresponding to the types of educational agents to whom an ODE can also be destined when participating in the teaching-learning process as facilitators and co-responsible.",
+        "type": "multiselect",
+        "values": ["teacher", "tutor", "family"],
+        "quantifiable": false
+    },
+    {
+        "name": "experts",
+        "description": "Includes the values corresponding to the types of managers and/or experts for whom a digital object may also be intended.",
+        "type": "multiselect",
+        "values": ["documentarian", "IT specialist", "administrator", "education expert", "subject matter expert"],
+        "quantifiable": false
+    },
+    {
+        "name": "assistance",
+        "description": "The type of assistance or support needed for the correct use of the object, if any.",
+        "type": "multiselect",
+        "values": ["teacher", "tutor", "family", "peer", "independent", "mixed"],
+        "quantifiable": false
     }
 ]
